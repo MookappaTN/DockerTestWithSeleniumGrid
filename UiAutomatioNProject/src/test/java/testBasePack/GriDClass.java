@@ -29,8 +29,8 @@ public class GriDClass {
 
 	    if (browser.equalsIgnoreCase("chrome")) {
 	        ChromeOptions chromeOptions = new ChromeOptions();
-	        chromeOptions.setPlatformName("LINUX");  // Platform name should match the Selenium node platform
-	        driver = new RemoteWebDriver(gridUrl, chromeOptions);
+	        chromeOptions.setPlatformName("LINUX");  
+	        driver = new RemoteWebDriver(gridUrl, chromeOptions);;
 
 	    } else if (browser.equalsIgnoreCase("firefox")) {
 	        FirefoxOptions firefoxOptions = new FirefoxOptions();
